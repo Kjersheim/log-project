@@ -2,6 +2,7 @@
 
 I decided to continue using Tailwind for my CSS Library, as this utility-first framework consists of more customizable classes so I can style my own components. While having considered Boot-strap earlier, I felt this might be more based on pre-designed components and other elements such as buttons, navbars and layouts. 
 A previous challenge in projects similar to this, is the deployment process. Since we are using the gitlab pages deployment, I was not entirely sure how that would work. Gitlab uses .yml files for the deployment process, and it might be that I need to create a script for this at some point. 
+
 Tailwind does require a build process, as it takes the tailwind styles and whatever I might add as custom styles and uses this to generate the final CSS file. Once the final file is built this is the one being used by our markup. Creating a script in the package.json file that outputs a style.css could be an option, and also something that we could consider to include in the .gitlab-ci.yml file for the gitlab deployment, and additionally make these processes point towards a public folder within my root structure to gather the necessary files for deployment. 
 After initializing a project in a new directory named log-project, I installed vite, tailwindcss, postcss and autoprefixer using NPM. Following the tailwind documentation, I initialized tail-windcss using NPX. At this point I had both the package.json for the node project and the tail-wind config file as tailwind.config.js.
 
