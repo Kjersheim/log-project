@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log Archive</title>
+  <link href="../styles/main.css" rel="stylesheet">
+</head>
+<body class="bg-secondary text-text_primary flex flex-col min-h-screen">
+  <!-- NAVBAR MOBILE -->
+  <nav class="z-10  md:hidden group fixed left-0 top-0 bottom-0 bg-bg_tertiary w-20 transition-all duration-600 ease-linear hover:w-64 focus-within:w-64">
+    <ul class="list-none p-0 m-0 flex flex-col items-center h-screen">
+      <!-- HDL Menu Arrow -->
+      <li class="font-bold uppercase mb-4 text-center text-text_secondary bg-bg_tertiary text-xl tracking-[0.3ch] w-full">
+        <a href="#" class="group flex items-center h-20 text-text_primary no-underline filter grayscale opacity-70 transition-all duration-[600ms] hover:filter-none hover:opacity-100 hover:bg-bg_tertiary focus:filter-none focus:opacity-100 focus:bg-bg_tertiary">
+          <span class="text-lg hidden ml-4 group-hover:inline group-focus-within:inline">HDL Menu</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-8 h-8 mx-6 fill-current text-text_primary rotate-0 transition-transform duration-[600ms] group-hover:-rotate-180 group-hover:text-text_secondary group-focus-within:-rotate-180 group-focus-within:text-text_secondary">
+            <path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/>
+          </svg>
+        </a>
+      </li>
+      <!-- Main Page -->
+      <li class="w-full hover:border-t hover:border-b border-text_secondary">
+        <a href="../../index.html" class="group flex items-center h-20 text-text_primary no-underline filter grayscale opacity-70 transition-all duration-[600ms] hover:filter-none hover:opacity-100 hover:bg-bg_tertiary hover:text-text_secondary focus:filter-none focus:opacity-100 focus:bg-bg_tertiary focus:text-text_secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="w-8 h-8 mx-6 fill-current text-text_primary group-hover:text-text_secondary group-focus-within:text-text_secondary">
+            <!--! Font Awesome Free 6.7.1 by @fontawesome -->
+            <path d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/>
+          </svg>
+          <span class="text-xl hidden ml-4 group-hover:inline group-focus-within:inline">Main Page</span>
+        </a>
+      </li>
+      <!-- Recent Articles -->
+      <li class="w-full hover:border-t hover:border-b border-text_secondary">
+        <a href="./articles.html" class="group flex items-center h-20 text-text_primary no-underline filter grayscale opacity-70 transition-all duration-[600ms]  hover:filter-none hover:opacity-100 hover:bg-bg_tertiary hover:text-text_secondary focus:filter-none focus:opacity-100 focus:bg-bg_tertiary focus:text-text_secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-8 h-8 mx-6 fill-current text-text_primary group-hover:text-text_secondary group-focus-within:text-text_secondary">
+            <!--! Font Awesome Free 6.7.1 by @fontawesome -->
+            <path d="M96 96c0-35.3 28.7-64 64-64l288 0c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L80 480c-44.2 0-80-35.8-80-80L0 128c0-17.7 14.3-32 32-32s32 14.3 32 32l0 272c0 8.8 7.2 16 16 16s16-7.2 16-16L96 96zm64 24l0 80c0 13.3 10.7 24 24 24l112 0c13.3 0 24-10.7 24-24l0-80c0-13.3-10.7-24-24-24L184 96c-13.3 0-24 10.7-24 24zm208-8c0 8.8 7.2 16 16 16l48 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-48 0c-8.8 0-16 7.2-16 16zm0 96c0 8.8 7.2 16 16 16l48 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-48 0c-8.8 0-16 7.2-16 16zM160 304c0 8.8 7.2 16 16 16l256 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-256 0c-8.8 0-16 7.2-16 16zm0 96c0 8.8 7.2 16 16 16l256 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-256 0c-8.8 0-16 7.2-16 16z"/>
+          </svg>
+          <span class="text-xl hidden ml-4 group-hover:inline group-focus-within:inline">Recent Articles</span>
+        </a>
+      </li>
+      <!-- Archive -->
+      <li class="w-full hover:border-t hover:border-b border-text_secondary">
+        <a href="./archive.html" class="group flex items-center h-20 text-text_primary no-underline filter grayscale opacity-70 transition-all duration-[600ms]  hover:filter-none hover:opacity-100 hover:bg-bg_tertiary hover:text-text_secondary focus:filter-none focus:opacity-100 focus:bg-bg_tertiary focus:text-text_secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="w-8 h-8 mx-6 fill-current text-text_primary group-hover:text-text_secondary group-focus-within:text-text_secondary">
+            <!--! Font Awesome Free 6.7.1 by @fontawesome -->
+            <path d="M88.7 223.8L0 375.8 0 96C0 60.7 28.7 32 64 32l117.5 0c17 0 33.3 6.7 45.3 18.7l26.5 26.5c12 12 28.3 18.7 45.3 18.7L416 96c35.3 0 64 28.7 64 64l0 32-336 0c-22.8 0-43.8 12.1-55.3 31.8zm27.6 16.1C122.1 230 132.6 224 144 224l400 0c11.5 0 22 6.1 27.7 16.1s5.7 22.2-.1 32.1l-112 192C453.9 474 443.4 480 432 480L32 480c-11.5 0-22-6.1-27.7-16.1s-5.7-22.2 .1-32.1l112-192z"/>
+          </svg>
+          <span class="text-xl hidden ml-4 group-hover:inline group-focus-within:inline">Archive</span>
+        </a>
+      </li>
+      <!-- About -->
+      <li class="w-full  hover:border-t hover:border-b border-text_secondary">
+        <a href="./about.html" class="group flex items-center h-20 text-text_primary no-underline filter grayscale opacity-70 transition-all duration-[600ms]  hover:filter-none hover:opacity-100 hover:bg-bg_tertiary hover:text-text_secondary focus:filter-none focus:opacity-100 focus:bg-bg_tertiary focus:text-text_secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="w-8 h-8 mx-6 fill-current text-text_primary group-hover:text-text_secondary group-focus-within:text-text_secondary">
+            <!--! Font Awesome Free 6.7.1 by @fontawesome -->
+            <path d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l448 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zm80 256l64 0c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16L80 384c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm-32-96a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zm256-32l128 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-128 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l128 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-128 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l128 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-128 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/>
+          </svg>
+          <span class="text-xl hidden ml-4 group-hover:inline group-focus-within:inline">About</span>
+        </a>
+      </li>
+      <!-- Newsletter link -->
+      <li class="w-full mt-auto hover:border-t hover:border-b border-text_secondary">
+        <a href="#footer" class="group flex items-center h-20 text-text_primary no-underline filter grayscale opacity-70 transition-all duration-[600ms]  hover:filter-none hover:opacity-100 hover:bg-bg_tertiary hover:text-text_secondary focus:filter-none focus:opacity-100 focus:bg-bg_tertiary focus:text-text_secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-8 h-8 mx-6 fill-current text-text_primary group-hover:text-text_secondary group-focus-within:text-text_secondary">
+            <!--! Font Awesome Free 6.7.1 by @fontawesome -->
+            <path d="M215.4 96L144 96l-36.2 0L96 96l0 8.8L96 144l0 40.4 0 89L.2 202.5c1.6-18.1 10.9-34.9 25.7-45.8L48 140.3 48 96c0-26.5 21.5-48 48-48l76.6 0 49.9-36.9C232.2 3.9 243.9 0 256 0s23.8 3.9 33.5 11L339.4 48 416 48c26.5 0 48 21.5 48 48l0 44.3 22.1 16.4c14.8 10.9 24.1 27.7 25.7 45.8L416 273.4l0-89 0-40.4 0-39.2 0-8.8-11.8 0L368 96l-71.4 0-81.3 0zM0 448L0 242.1 217.6 403.3c11.1 8.2 24.6 12.7 38.4 12.7s27.3-4.4 38.4-12.7L512 242.1 512 448s0 0 0 0c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64c0 0 0 0 0 0zM176 160l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/>
+          </svg>
+          <span class="text-xl hidden ml-4 group-hover:inline group-focus-within:inline">Newsletter</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- HEADER - NAVBAR MEDIUM+LARGE SCREENS-->
+  <header class="py-4 px-6">
+    <div class="ml-24 lg:ml-10p xl:ml-20p md:ml-7p flex flex-col items-start">
+        <!-- Logo -->
+      <img src="../assets/images/hdl.png" alt="HDL ASCII Logo" class="h-16 w-auto">
+
+      <!-- Horizontal Navbar -->
+      <nav class="md:block hidden mt-4 w-full">
+        <ul class="flex space-x-6 font-serif text-lg lg:text-xl">
+          <li class="group">
+            <a href="../../index.html" class="relative text-gray-500 hover:text-black transition-all">
+              Main
+              <span
+                class="absolute left-full pl-0 hidden group-hover:inline-block animate-blink text-green-500"
+              >|</span>
+            </a>
+          </li>
+          <li class="group">
+            <a href="./articles.html" class="relative text-gray-500 hover:text-black transition-all">
+              Recent Articles
+              <span
+                class="absolute left-full pl-0 hidden group-hover:inline-block animate-blink text-green-500"
+              >|</span>
+            </a>
+          </li>
+          <li class="group">
+            <a href="./archive.html" class="relative text-gray-500 hover:text-black transition-all">
+              Archive
+              <span
+                class="absolute left-full pl-0 hidden group-hover:inline-block animate-blink text-green-500"
+              >|</span>
+            </a>
+          </li>
+          <li class="group">
+            <a href="./about.html" class="relative text-gray-500 hover:text-black transition-all">
+              About
+              <span
+                class="absolute left-full pl-0 hidden group-hover:inline-block animate-blink text-green-500"
+              >|</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- MAIN CONTENT -->
+  <div class="flex-grow">
+    <main class="ml-24 lg:ml-7p px-4 lg:px-8 mt-8 grid grid-rows md:grid-cols-4 lg:grid-cols-8">
+        <!-- About me -->
+        <section class="px-4 lg:px-8 mt-8 md:col-span-4 md:order-1 lg:col-span-4">
+            <h1 class="text-4xl font-serif font-bold text-gray-800 mb-6">About Me</h1>
+            <p class="text-lg leading-7 text-gray-700 mb-6 max-w-74ch">
+                Hi there! I’m someone who loves puzzles, solving tasks, diving into new challenges, and reflecting on my experiences. Writing it all down helps me organize my thoughts and, honestly, remember the journey. With so many projects and ideas out there, it can feel overwhelming to keep up. That’s why I create logs—not just to document my actions but to spend more time learning from them. While these logs are mostly for me, you’re welcome to read along.
+            </p>
+            <p class="text-lg leading-7 text-gray-700 mb-6 max-w-74ch">
+                I’m a Norwegian with a background in law enforcement, where writing detailed reports has been second nature for over a decade. Working in digital forensics and OSINT taught me the value of documentation—not just for myself, but for others to follow, replicate, and improve upon. It’s all about creating a clear, repeatable trail.
+            </p>
+            <p class="text-lg leading-7 text-gray-700 mb-6 max-w-74ch">
+                For a long time, we lived far up north. The Arctic had its perks: untouched nature right outside the door, skiing, fishing, and flat hikes (yes, flat ones count!). Our favorite pastime was freediving in the icy, crystal-clear Arctic Ocean. It’s something I miss deeply about life up there.
+            </p>
+            <p class="text-lg leading-7 text-gray-700 mb-6 max-w-74ch">
+                But we moved south for a reason—to be closer to family, expand our horizons, and grow our skills. It’s been an exciting opportunity to meet new people, try new things, and embrace a new chapter.
+            </p>
+            <p class="text-lg leading-7 text-gray-700 mb-6 max-w-74ch">
+                Now, back to the log! It’s my space to document the tools I test, the things I work on, and the ideas I explore. Much of it is tied to my university journey, though I do sprinkle in other random projects whenever I find the time. Updates happen as often as life allows—more when it’s calm, less when it’s hectic.
+            </p>
+            <p class="text-lg leading-7 text-gray-700 max-w-74ch">
+            If you have ideas, want to collaborate, or simply feel like reaching out, I’d love to hear from you. And if you spot errors or have better methods to suggest, please share your wisdom—I’m always eager to learn!
+            </p>
+        </section>          
+        <!-- Tools -->
+        <section class="px-4 lg:px-8 mt-8 md:order-2 md:col-span-4 lg:order-4 lg:col-span-3">
+            <h1 class="text-4xl font-serif font-bold text-gray-800 mb-6">Tools Used</h2>
+            <div class="mb-8">
+              <h3 class="text-xl font-semibold text-gray-700 mb-2">Penetration Testing</h3>
+              <p class="text-lg leading-7 text-gray-700">
+                My go-to tools for penetration testing include <strong>Burp Suite</strong> for web application testing, <strong>Nmap</strong> for network mapping, and <strong>Metasploit</strong> for exploiting vulnerabilities. I also utilize <strong>Kali Linux</strong>, a comprehensive distro packed with everything needed for pentesting.
+              </p>
+            </div>
+            <div class="mb-8">
+              <h3 class="text-xl font-semibold text-gray-700 mb-2">Red Teaming</h3>
+              <p class="text-lg leading-7 text-gray-700">
+                For red teaming, I rely on advanced tools like <strong>Sliver</strong> for command-and-control operations, <strong>Cobalt Strike</strong> for emulating adversarial tactics, and <strong>BloodHound</strong> for analyzing Active Directory attack paths. Custom payload creation with tools like <strong>Msfvenom</strong> is a frequent part of my workflow.
+              </p>
+            </div>
+            <div class="mb-8">
+              <h3 class="text-xl font-semibold text-gray-700 mb-2">Auditing</h3>
+              <p class="text-lg leading-7 text-gray-700">
+                For system and network auditing, I use <strong>Wireshark</strong> to analyze traffic, <strong>OpenVAS</strong> for vulnerability scanning, and <strong>Autopsy</strong> for forensic investigations. Logging tools like <strong>Splunk</strong> and <strong>ELK Stack</strong> help me analyze and visualize system data effectively.
+              </p>
+            </div>
+            <div class="mb-8">
+              <h3 class="text-xl font-semibold text-gray-700 mb-2">Technical Writing</h3>
+              <p class="text-lg leading-7 text-gray-700">
+                For technical documentation and reports, I use <strong>Markdown</strong> editors like <strong>Typora</strong> and version control with <strong>Git</strong> to maintain revisions. Tools like <strong>Figma</strong> aid in creating diagrams, and <strong>LaTeX</strong> ensures professional report formatting.
+              </p>
+            </div>
+          </section>
+          <!-- Cybersec Illustration-->
+          <section class="px-4 lg:px-8 md:order-3 md:col-span-4 lg:order-3">
+            <picture>
+                <!-- Large screens (width 961px and up) -->
+                <source media="(min-width: 961px)" srcset="../assets/images/cybersec-large.png 2000w, ../assets/images/cybersec-medium.png 1000w" 
+                    sizes="(min-width: 1200px) 1200px, 100vw" 
+                />
+                <!-- Medium screens (width between 401px and 960px) -->
+                <source 
+                    media="(min-width: 401px) and (max-width: 960px)" 
+                    srcset="../assets/images/cybersec-medium.png 1000w, ../assets/images/cybersec-small.png 500w" 
+                    sizes="100vw" 
+                />
+                <!-- Small screens (width 400px and below) -->
+                <source 
+                    media="(max-width: 400px)" 
+                    srcset="../assets/images/cybersec-small.png 500w" 
+                    sizes="100vw" 
+                />
+                <!-- Fallback for unsupported browsers -->
+                <img 
+                    src="../assets/images/cybersec-small.png" 
+                    alt="Illustration of cybersecurity concept, Darwin Laganzon on Pixabay" 
+                    title="Illustration of cybersecurity concept by Darwin Laganzon on Pixabay" 
+                    class="w-full h-auto"
+                />
+            </picture>
+        </section>
+        <!-- Contact -->
+        <section class="px-4 lg:px-8 mb-20p md:order-4 md:col-span-4 lg:order-2 lg:col-span-3">
+            <h1 class="text-3xl font-serif font-semibold text-gray-800 mb-4">Let’s Connect</h1>
+        <p class="text-lg leading-7 text-gray-700 mb-6 max-w-74ch">
+            If you’d like to collaborate, discuss ideas, or just say hi, feel free to reach out via the form below!
+        </p>
+        <form class="space-y-4">
+            <input type="text" id="name" name="name" placeholder="Your Name" class="w-full p-3 bg-bg_secondary text-gray-800 rounded-md outline-none focus:ring-2 focus:ring-teal-500">
+            <input type="email" id="email" name="email" placeholder="Your Email" class="w-full p-3 bg-bg_secondary text-gray-800 rounded-md outline-none focus:ring-2 focus:ring-teal-500">
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" class="w-full p-3 bg-bg_secondary text-gray-800 rounded-md outline-none focus:ring-2 focus:ring-teal-500"></textarea>
+            <button type="submit" class="px-6 py-2 w-auto bg-teal-500 text-white rounded-md hover:bg-teal-600 transition-all">
+                Send Message
+            </button>
+        </form>
+        </section>
+    </main>
+</div>
+  <!-- FOOTER-->
+  <footer id="footer" class="text-text_primary py-6 px-6 w-full">
+    <div class="ml-20 max-w-72 md:max-w-screen-2xl md:mx-auto grid grid-col md:grid-cols-3 gap-4 items-center">
+      <!-- HDL Logo -->
+      <div class="flex mt-12 justify-start md:justify-start items-center">
+        <img src="../assets/svg/3dLogoV1.svg" alt="HDL Logo" class="h-12 w-auto">
+      </div>
+      <!-- Newsletter Signup -->
+      <div class="text-center md:text-left">
+        <p class="mb-2 text-md">Want a pdf version of my latest logs? Sign up to the newsletter for the latest updates.</p>
+        <form class="flex flex-col items-start">
+          <input type="email" placeholder="Enter your email" class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-600 focus:border-transparent w-full mb-2" required/>
+          <button type="submit" class="px-6 py-2 bg-teal-500 text-white rounded-md hover:bg-teal-600 transition-all">
+            Sign Up
+          </button>
+        </form>
+      </div>
+      <!-- Social Media Links -->
+      <div class="flex flex-col lg:flex-row md:justify-end md:space-y-0 lg:space-x-6 lg:mt-12 mt-6 justify-center space-y-4">
+        <a href="http://www.linkedin.com/in/kjersheim" target="_blank" class="flex md:flex-row-reverse space-x-2 md:space-x-reverse text-teal-800 hover:text-green-500 transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 448 512">
+            <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/Kjersheim" target="_blank" class="flex md:flex-row-reverse space-x-2 md:space-x-reverse text-teal-800 hover:text-green-500 transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 448 512">
+            <path d="M448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM265.8 407.7c0-1.8 0-6 .1-11.6c.1-11.4 .1-28.8 .1-43.7c0-15.6-5.2-25.5-11.3-30.7c37-4.1 76-9.2 76-73.1c0-18.2-6.5-27.3-17.1-39c1.7-4.3 7.4-22-1.7-45c-13.9-4.3-45.7 17.9-45.7 17.9c-13.2-3.7-27.5-5.6-41.6-5.6s-28.4 1.9-41.6 5.6c0 0-31.8-22.2-45.7-17.9c-9.1 22.9-3.5 40.6-1.7 45c-10.6 11.7-15.6 20.8-15.6 39c0 63.6 37.3 69 74.3 73.1c-4.8 4.3-9.1 11.7-10.6 22.3c-9.5 4.3-33.8 11.7-48.3-13.9c-9.1-15.8-25.5-17.1-25.5-17.1c-16.2-.2-1.1 10.2-1.1 10.2c10.8 5 18.4 24.2 18.4 24.2c9.7 29.7 56.1 19.7 56.1 19.7c0 9 .1 21.7 .1 30.6c0 4.8 .1 8.6 .1 10c0 4.3-3 9.5-11.5 8C106 393.6 59.8 330.8 59.8 257.4c0-91.8 70.2-161.5 162-161.5s166.2 69.7 166.2 161.5c.1 73.4-44.7 136.3-110.7 158.3c-8.4 1.5-11.5-3.7-11.5-8zm-90.5-54.8c-.2-1.5 1.1-2.8 3-3.2c1.9-.2 3.7 .6 3.9 1.9c.3 1.3-1 2.6-3 3c-1.9 .4-3.7-.4-3.9-1.7z" />
+          </svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://bsky.app/profile/kjers.bsky.social" target="_blank" class="flex md:flex-row-reverse space-x-2 md:space-x-reverse text-teal-800 hover:text-green-500 transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 448 512">
+            <path d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM224 247.4c14.5-30 54-85.8 90.7-113.3c26.5-19.9 69.3-35.2 69.3 13.7c0 9.8-5.6 82.1-8.9 93.8c-11.4 40.8-53 51.2-90 44.9c64.7 11 81.2 47.5 45.6 84c-67.5 69.3-97-17.4-104.6-39.6c0 0 0 0 0 0l-.3-.9c-.9-2.6-1.4-4.1-1.8-4.1s-.9 1.5-1.8 4.1c-.1 .3-.2 .6-.3 .9c0 0 0 0 0 0c-7.6 22.2-37.1 108.8-104.6 39.6c-35.5-36.5-19.1-73 45.6-84c-37 6.3-78.6-4.1-90-44.9c-3.3-11.7-8.9-84-8.9-93.8c0-48.9 42.9-33.5 69.3-13.7c36.7 27.5 76.2 83.4 90.7 113.3z" />
+          </svg>
+          <span>Bluesky</span>
+        </a>
+      </div>
+    </div>
+  </footer>  
+</body>
+</html>

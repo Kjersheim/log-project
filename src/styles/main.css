@@ -1,0 +1,108 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* === Custom Styles === */
+
+/* Box-sizing Reset */
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Remove Default Margins */
+html, body, h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+/* === Typography Best Practices === */
+body {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f9fafb;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+/* h1-h3 Approximately 36px, 30px, 24px */
+h1 {
+    font-size: 2.25rem;
+}
+h2 {
+    font-size: 1.875rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    /* Spacing between paragraphs */
+    margin-bottom: 1.5rem; 
+    /* New York Times suggested paragraph/line length*/
+    max-width: 74ch;
+}
+
+/* Images and Media */
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+/* Mainpage Tags*/
+@layer components {
+  
+.tag {
+    @apply inline rounded-md px-1 py-1 font-semibold text-base transition-all cursor-pointer;
+  }
+  
+  .tag-md {
+    @apply md:text-base md:px-2 py-2;
+  }
+  
+  .tag-dfir {
+    @apply bg-dfir text-white hover:brightness-110;
+  }
+  
+  .tag-red_teaming {
+    @apply bg-red_teaming text-white hover:brightness-110;
+  }
+  
+  .tag-osint {
+    @apply bg-osint text-white hover:brightness-110;
+  }
+  
+  .tag-secure_setup {
+    @apply bg-secure_setup text-white hover:brightness-110;
+  }
+  
+  .tag-kali {
+    @apply bg-kali text-white hover:brightness-110;
+  }
+  
+  .tag-dev_projects {
+    @apply bg-dev_projects text-black hover:brightness-110;
+  }
+  
+  .tag-technical_writing {
+    @apply bg-technical_writing text-white hover:brightness-110;
+  }
+  
+}

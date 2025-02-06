@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="239.14549"
+   height="51.467304"
+   viewBox="0 0 63.273912 13.617391"
+   version="1.1"
+   id="svg1"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#008080;fill-rule:evenodd;stroke-width:0.582083;stroke-linecap:round;stroke-linejoin:round"
+       d="m 0,0 6.5739131,7.9826087 19.4869559,1.8782607 5.165219,3.7565216 h 9.391303 V 12.554988 H 31.294085 L 26.936157,8.6328513 7.3047203,7.2632164 0.56030526,0 Z"
+       id="path1" />
+    <path
+       style="fill:#d35f5f;fill-rule:evenodd;stroke-width:0.582083;stroke-linecap:round;stroke-linejoin:round"
+       d="m 4.2847826,0 2.523913,4.0500001 4.0500004,6.2804349 7.806521,-3.5217397 h 4.46087 l 6.914141,1.8526384 11.222815,-0.7961164 5.928262,4.6369567 h 1.349999 L 41.85,6.8086953 29.993478,7.8065216 23.478261,5.6347825 H 18.48913 L 11.093478,9.7434782 5.4,0 Z"
+       id="path2" />
+    <path
+       style="fill:#e0ff80;fill-opacity:1;fill-rule:evenodd;stroke-width:0.582083;stroke-linecap:round;stroke-linejoin:round"
+       d="M 0,3.0521738 11.504348,3.6978261 22.597826,1.5260869 h 13.61739 L 40.992514,2.8061602 57.039239,12.07074 H 55.526087 L 40.617391,3.873913 36.18335,2.685815 23.478261,2.1717391 11.504348,4.5782608 H 0 Z"
+       id="path3" />
+    <path
+       style="fill:#61c053;fill-opacity:1;fill-rule:evenodd;stroke-width:0.582083;stroke-linecap:round;stroke-linejoin:round"
+       d="m 12.502174,0 10.330434,4.2260869 7.395654,2.0250001 7.160868,4.431522 21.541303,-3.1108699 2.934783,4.4990009 h 1.408697 L 59.458695,6.251087 37.917392,9.5673912 32.399999,4.4608694 24.006522,3.4630434 15.084783,0 Z"
+       id="path4" />
+  </g>
+</svg>
