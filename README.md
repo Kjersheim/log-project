@@ -9,7 +9,7 @@ After initializing a project in a new directory named log-project, I installed v
 ## 11.1	Project Catalogue Structure
 After some testing I did find a folder structure that supported some clarity for my own benefit, compartmentalizing some files but not uneccesarily complicated. The folderstructure can be seen below (fig. 1)
 
-![Filestructure](https://raw.githubusercontent.com/Kjersheim/log-project/refs/heads/main/readme-images/Picture1.png)
+![Filestructure]readme-images/Picture1.png)
 
 
 At this point I created a test page to test deployment, to make sure the configurations did not initially had problems (fig. 2).
@@ -22,47 +22,47 @@ While the example I saw years ago were very different in some ways, it was more 
 ## 11.3	The main layout
 I decided to go with a horizontal top navigation on desktop, as seen in the figure 3 below. An aspect I wanted to keep was little distractions or background noice, and the logo was created with an ascii generator. While this image was not the most responsive, I liked the very simple look and it fit into my idea of clean and an easy color-palette. I added some more colorful tags to get some more colors, which at the same could have functionality to categorize articles. The actual functionality has not been added as it would require more actual articles, and probably be most easy to complete by setting up a database that contain the servers so they can more easily be fetched on search and selections. 
 
-![readme-images/Picture3.png](main layout)
+![main layout](readme-images/Picture3.png]
 
 I still wanted to have some useful information in the footer, sticking to the bottom(fig. 4). 
 
-![readme-images/Picture4.png](footer)
+![footer](readme-images/Picture4.png)
 
 
 For smaller screens, the mobile navigation was the first one added to the page, and while it did have a bit different view than the main page I did like how it turned out and the functionality without being too advanced, and different than the 200 hamburger menus I see on a daily basis. I wanted to have a sidebar style of navigation, but I felt it was important to keep the text in the menu as I have seen lectures where despite many icons being clear, most people are not sure without the text. I also added the names to the social medias in the footer for this reason. 
 The layout design for the mobile menu was based on a guide by Fireship (https://youtu.be/pfaSUYaSgRo?si=IQ3onKWwUffZHUTn). I felt this was a really challenging and good way to start the project, as it did use tailwind. However, the guide used react and had a different setup of the project and parts of the navigation so I did not follow the guide but mostly use the classes for inspiration and a guideline for how it could be put together (fig. 5). 
 
-![readme-images/Picture5.png](Mobile view)
+![Mobile view](readme-images/Picture5.png)
 
 
 ## 11.4	Other pages
 For the recent articles page, I wanted to showcase the articles in smaller article styled cards, but with enough information to catch the interest of the reader (fig. 6). Using a grid layout made it much easier to keep the page responsive. Initially I wanted to make use of an ordered grid, but on testing the different layouts and using spans for the top most recent article, I decided to keep it as is. If I had more time for the project, I would change it to order as the other pages. As the cards below were equal  in content and size, I did not feel the need to be able to move certain cards around to different locations, and the general flow on smaller screens followed nicely. 
 
-![readme-images/Picture6.png](recent articles)
+![recent articles](readme-images/Picture6.png)
 
 
 For the archive page, I wanted a clean simple layout that had a bit more options than the first. The first one is ment only to show the most recent ones, despite having a ”load more” option. I also wanted to explore what options there are for tailwindcss, as so far while I am getting more and more used to using tailwinds classes, there are things of classic CSS or SCSS that would make things a bit easier to manage. For example for grid orders to add ”.” instead of a full empty div that I hid. When looking for components there were a plethora of different sites out there, but the one I looked at the most was probably https://tailwindui.com/components and https://www.creative-tim.com/. From the latter I did find a nice clean component I wanted to make use for the archive page: https://www.creative-tim.com/twcomponents/component/blog-page
 A lot of time was spent to change and make this component into something that would fit my log-archive. I added categories on the sidebars (but hiding them on medium/small screens), as well as option to browse and a dropdown for newest and oldest. While the actual functionality doesnt work as I have not focused on the backend at all, the idea is there to be shown (fig. 29).
 
-![readme-images/Picture7.png](archive page)
+![archive page](readme-images/Picture7.png)
 
 
 For the final about page, I decided to have a personal touch, and since this is not publicly available I did not consider the contents too hard but still wanted mostly to have some information that is still nice to read and hopefully does not bore the reader to switch to another website. I did go back to the main page as well as the about page and used order to move things around, and once I got back into that it was really rewarding and easy to see how to place objects. I did add a picture I liked to have some options to use for example more picture options as we have been through in the exercises so far, but at the same time I had a focus on creating something clean and that would fit the purpose of the page (fig. 30).
 
-![readme-images/Picture8.png](about page)
+![about page](readme-images/Picture8.png)
 
 
 In the core CSS file I added some default styles as well as testing @apply on the tags to see how it worked. I also used the tailwindcss config as shown to to the right in the figure to add my own custom class values (fig. 31).
 
-![readme-images/Picture9.png](CSS and Tailwind)
+![CSS and Tailwind](readme-images/Picture9.png)
 
 
 Additionally the plugin i used had some custom styling resets for the form elements, so added the forms plugin (fig. 32). I did have to consider the framework and configuration files throughout the project, as adding new files and paths, changing folders and similar, gave some challenges that I had to figure out, like adding new pages so they would get picked up by vite to be sent to distribute folder, as I did not want to have those as static files in the public folder. Eventually, I did the final build command/ (fig. 33). 
 , which pushed the final version to the gitlab deployed pages - not publishing it via github as only the code is available here. 
 
-![readme-images/Picture10.png](tailwind config) //
+![tailwind config](readme-images/Picture10.png) //
 
-![readme-images/Picture11.png](vite config and build)
+![vite config and build](readme-images/Picture11.png)
 
 
 
