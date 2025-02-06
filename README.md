@@ -19,7 +19,9 @@ At this point I created a test page to test deployment, to make sure the configu
 
 ## 11.2	Changes to the initial prototype
 When I initially started thinking about the plan I had an idea about creating a learning log where I could write articles, mostly for my own benefit from a design perspective as well as a toolbox and archive for later use. A couple years ago I also saw a navigation model I thought were intriguing, where the layout was very text based and clean, and had a colorful object in a corner bringing some focus to the navigation. I wanted to incorporate something similar to this, and navigate it in accordance to the animations and SVG opportunities we have seen through the exercises. However, after a couple weeks of testing different designs and ideas I still did not come up with designs I felt was as I wanted it to be. In most tests it seemed more of a nuisance and distraction rather than a point of interest. 
+
 While the example I saw years ago were very different in some ways, it was more like a visual notebook/pen and paper, the main idea I wanted was ”keep it simple, stupid”. I have always had a tendency to add too much, with too little focus on spacing, sizing, and the hero section. The goal for the final project was to create a practical website, that would be easy to navigate, be responsive to all devices from mobile to large screens and resolutions. Lastly but not least, a website that made the user easily can get information, understand layout and wants to navigate through. 
+
 ## 11.3	The main layout
 I decided to go with a horizontal top navigation on desktop, as seen in the figure 3 below. An aspect I wanted to keep was little distractions or background noice, and the logo was created with an ascii generator. While this image was not the most responsive, I liked the very simple look and it fit into my idea of clean and an easy color-palette. I added some more colorful tags to get some more colors, which at the same could have functionality to categorize articles. The actual functionality has not been added as it would require more actual articles, and probably be most easy to complete by setting up a database that contain the servers so they can more easily be fetched on search and selections. 
 
@@ -31,6 +33,7 @@ I still wanted to have some useful information in the footer, sticking to the bo
 
 
 For smaller screens, the mobile navigation was the first one added to the page, and while it did have a bit different view than the main page I did like how it turned out and the functionality without being too advanced, and different than the 200 hamburger menus I see on a daily basis. I wanted to have a sidebar style of navigation, but I felt it was important to keep the text in the menu as I have seen lectures where despite many icons being clear, most people are not sure without the text. I also added the names to the social medias in the footer for this reason. 
+
 The layout design for the mobile menu was based on a guide by Fireship (https://youtu.be/pfaSUYaSgRo?si=IQ3onKWwUffZHUTn). I felt this was a really challenging and good way to start the project, as it did use tailwind. However, the guide used react and had a different setup of the project and parts of the navigation so I did not follow the guide but mostly use the classes for inspiration and a guideline for how it could be put together (fig. 5). 
 
 ![Mobile view](readme-images/Picture5.png)
@@ -43,6 +46,7 @@ For the recent articles page, I wanted to showcase the articles in smaller artic
 
 
 For the archive page, I wanted a clean simple layout that had a bit more options than the first. The first one is ment only to show the most recent ones, despite having a ”load more” option. I also wanted to explore what options there are for tailwindcss, as so far while I am getting more and more used to using tailwinds classes, there are things of classic CSS or SCSS that would make things a bit easier to manage. For example for grid orders to add ”.” instead of a full empty div that I hid. When looking for components there were a plethora of different sites out there, but the one I looked at the most was probably https://tailwindui.com/components and https://www.creative-tim.com/. From the latter I did find a nice clean component I wanted to make use for the archive page: https://www.creative-tim.com/twcomponents/component/blog-page
+
 A lot of time was spent to change and make this component into something that would fit my log-archive. I added categories on the sidebars (but hiding them on medium/small screens), as well as option to browse and a dropdown for newest and oldest. While the actual functionality doesnt work as I have not focused on the backend at all, the idea is there to be shown (fig. 29).
 
 ![archive page](readme-images/Picture7.png)
@@ -68,8 +72,12 @@ Additionally the plugin i used had some custom styling resets for the form eleme
 
 
 For the final thoughts of the learning diary, I have gained a more in-depth understanding of modern web visualization techniques and tech, specially in the meaning of how to structure, style, and a bit of optimization of websites both for user experiences and functionality in mind. 
+
 I have used semantic elements before, but more concise so now. Recognizing how proper structure and semantic tags improve readability and maintainability, and accessability. When it comes to CSS layouts using particularily grid,  I have gained considerably more knowledge. Even though the final project was created slowly throughout some heavy impact from other courses, I was happy with the end result moreso than previous projects. Being able to consider responsiveness in a whole new light of ”easy” is great, instead of ignoring small things that might not in reality be that hard to change. 
+
 Typography have been a big part of the exercises and guides, like the best-practice list, that I keep going back to to check. Understanding the impact of font choices, spacing and line length on readability and how it looks. Animations were interesting to dive into, and I feel I would have wanted to use more animations and keyframes in my final project, at the same time I felt it did not fit with the ideas I had. 
+
 Lastly, for SASS and Tailwind, as I have never used either before – checking differences and how they can complement or replace the ways Ive done things before has been great. Testing components, implementing utility-first approaches, compartmentalizing projects in a different way than I have done before has been interesting. Additionally, I have gained more knowledge on how Gitlab works as that was my chosen deployment site, as I wanted every project in the same repository. I have had some hours checking the yml for the pipeline. 
+
 For the new and challenging aspect, using more responsiveness in pictures did go beyond what I have seen before, setting optimization for devices in a nice way. Understanding how browsers chose images based on DPR and media queries were interesting. For TailwindCSS utility-first approach is useful but takes time to get into, the cheatsheet-pages out there helped out tons to find answers from traditional CSS. With SASS I spent quite some time and did research on troubleshooting build processes with tools like Vite, and updating configurations to seemingly simple things like @use and @import.
 
