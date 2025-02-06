@@ -9,7 +9,7 @@ After initializing a project in a new directory named log-project, I installed v
 ## 11.1	Project Catalogue Structure
 After some testing I did find a folder structure that supported some clarity for my own benefit, compartmentalizing some files but not uneccesarily complicated. The folderstructure can be seen below (fig. 1)
 
-![https://github.com/Kjersheim/log-project/blob/main/readme-images/Picture1.png?raw=true](Filestructure)
+![https://raw.githubusercontent.com/Kjersheim/log-project/refs/heads/main/readme-images/Picture1.png](Filestructure)
 
 
 At this point I created a test page to test deployment, to make sure the configurations did not initially had problems (fig. 2).
