@@ -14,7 +14,7 @@ After some testing I did find a folder structure that supported some clarity for
 
 At this point I created a test page to test deployment, to make sure the configurations did not initially had problems (fig. 2).
 
-![readme-images/Picture2.png](testing deployment)
+![testing deployment](readme-images/Picture2.png)
 
 ## 11.2	Changes to the initial prototype
 When I initially started thinking about the plan I had an idea about creating a learning log where I could write articles, mostly for my own benefit from a design perspective as well as a toolbox and archive for later use. A couple years ago I also saw a navigation model I thought were intriguing, where the layout was very text based and clean, and had a colorful object in a corner bringing some focus to the navigation. I wanted to incorporate something similar to this, and navigate it in accordance to the animations and SVG opportunities we have seen through the exercises. However, after a couple weeks of testing different designs and ideas I still did not come up with designs I felt was as I wanted it to be. In most tests it seemed more of a nuisance and distraction rather than a point of interest. 
