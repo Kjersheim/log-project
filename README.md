@@ -1,5 +1,9 @@
 # log-project
 
+## Preview
+
+![testing deployment](readme-images/Preview.gif)
+
 I decided to continue using Tailwind for my CSS Library, as this utility-first framework consists of more customizable classes so I can style my own components. While having considered Boot-strap earlier, I felt this might be more based on pre-designed components and other elements such as buttons, navbars and layouts. 
 A previous challenge in projects similar to this, is the deployment process. Since we are using the gitlab pages deployment, I was not entirely sure how that would work. Gitlab uses .yml files for the deployment process, and it might be that I need to create a script for this at some point. 
 
